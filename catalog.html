@@ -73,7 +73,25 @@
             </form>
         </section>
         <section class="catalog">
-            <h2 class="visually-hidden">список шаблонов</h2>
+            <h2 class="visually-hidden">Список шаблонов</h2>
+            <!--сюда-->
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>СОРТИРОВАТЬ</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="by price" checked>
+                            ПО ЦЕНЕ</li>
+                        <li class="filter-option">
+                        <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="type">
+                            ПО ТИПУ</li>
+                        <li class="filter-option">
+                        <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="By name">
+                            ПО НАЗВАНИЮ</li>
+                    </ul>         
+                </fieldset>
+            </form>
+            <!--досюда-->
             <ul class="catalog-list">
                 <li class="catalog-item">
                     <p>
@@ -125,6 +143,15 @@
                 <li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
             </ul>
         </section>
+        <section>
+                <img class="map" src="#" wight="100%" heigt="300" alt="карта">
+                    <h2>NЁRDS DESIGN STUDIO</h2>
+                    <p>191186, Санкт-Петербург <br>
+                    ул. Б. Конюшенная, д.19/8
+                    </p>
+                    <p>тел. +7(812)275-75-75</p>
+                    <a class="button contacts-button" href="contacts.html">напишите нам</a>
+            </section>
     </main>
     <footer class="main-footer">
             <div class="footer-social">
