@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Магазин готовых шаблонов</title>
+    </head>
+    <body>
+    <header class="main-header">
+            <nav class="main-navigation">
+                <a class="main-header-logo" href="index.html">
+                    <img src="http://placehold.it/150x100" wight="150" height="100" alt="логотип проет нердс">
+                </a>    
+                <ul class="site-navigation">
+                    <li><a href="studia.html">СТУДИЯ</a></li>
+                    <li><a href="klienty.html">КЛИЕНТЫ</a></li>
+                    <li class="site-navigation-current"><a href="shop.html">МАГАЗИН</a></li>
+                    <li><a href="contacts.html">КОНТАКТЫ</a></li>            
+                </ul>
+                <ul class="user-navigation">
+                    <li class="basket">КОРЗИНА</li>
+                </ul>
+            </nav>
+        </header>
+    <main class="container">
+            <h1 class="page-title">Магазин готовых шаблонов</h1>
+        <section class="filters">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>СТОИМОСТЬ</legend>
+                        <input type="range" min="0" max="15000" step="1" value="10000">
+                </fieldset>
+                <fieldset>
+                    <legend>СЕТКА</legend>
+                    <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="Adaptive" checked>
+                                Адаптивная
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="Fixed">
+                                Фиксированная 
+                            </li>
+                    </ul>
+                        <p>Резиновая</p>
+                </fieldset>
+                <fieldset>
+                    <legend>ОСОБЕННОСТИ</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Слайдер" checked>
+                                Слайдер
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Блок преимуществ">
+                                Блок преимуществ
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Новости" checked>
+                                Новости
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Галерея">
+                                Галерея
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Корзина">
+                                Корзина
+                            </li>
+                        </ul>
+                </fieldset>
+                <button type="submit" class="filter-button button">Показать</button>
+            </form>
+        </section>
+        <section class="catalog">
+            <h2 class="visually-hidden">список шаблонов</h2>
+            <ul class="catalog-list">
+                <li class="catalog-item">
+                    <p>
+                        <a href="catalog-item.html">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон седона">
+                        </a>
+                    </p>
+                </li>
+                <li class="catalog-item">
+                    <p>
+                        <a href="catalog-item.html">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон Пинк">
+                        </a>
+                    </p>
+                </li>
+                <li class="catalog-item">
+                    <p>
+                        <a href="catalog-item.html">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон бородинский">
+                        </a>
+                    </p>
+                </li>
+                <li class="catalog-item">
+                    <p>
+                        <a href="catalog-item.html">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон Мишка">
+                        </a>
+                    </p>
+                </li>
+                <li class="catalog-item">
+                    <p>
+                        <a href="catalog-item.html">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон А+">
+                        </a>
+                    </p>
+                </li>
+                <li class="catalog-item">
+                    <p>
+                        <a href="catalog-item.html">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон Кваст">
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="main-footer">
+            <div class="footer-social">
+            <ul>
+                <li><a class="social-button" href="#">Вконтакте</a></li>
+                <li><a class="social-button" href="#">Фейсбук</a></li>
+                <li><a class="social-button" href="#">Инстаграм</a></li>
+            </ul>
+            </div>
+            <p class="text">
+                <b>Давайте дружить, это выгодно</b>
+                    Скидка 10% для друзей из социальных сетей
+            </p>
+        </footer>
+    </body>
+</html>
