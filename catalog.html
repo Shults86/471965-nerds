@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Магазин готовых шаблонов</title>
+        <title>nerds</title>
     </head>
     <body>
-    <header class="main-header">
+        <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-header-logo" href="index.html">
-                    <img src="http://placehold.it/150x100" wight="150" height="100" alt="логотип проет нердс">
+                <a class="main-header-logo">
+                    <img src="http://placehold.it/150x100" wight="150" height="100" alt="логотип проект нердс">
                 </a>    
                 <ul class="site-navigation">
                     <li><a href="studia.html">СТУДИЯ</a></li>
                     <li><a href="klienty.html">КЛИЕНТЫ</a></li>
                     <li class="site-navigation-current"><a href="shop.html">МАГАЗИН</a></li>
-                    <li><a href="contacts.html">КОНТАКТЫ</a></li>            
-                </ul>
-                <ul class="user-navigation">
-                    <li class="basket">КОРЗИНА</li>
-                </ul>
+                    <li><a href="contacts.html">КОНТАКТЫ</a></li>   </ul>
+                <a href="#">КОРЗИНА</a>
             </nav>
         </header>
     <main class="container">
@@ -27,9 +24,15 @@
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
-                    <legend>СТОИМОСТЬ</legend>
-                        <input type="range" min="0" max="15000" step="1" value="10000">
-                </fieldset>
+            <legend>Стоимость:</legend>
+            <div>
+              <label for="sort-price"></label>
+              <input type="range" id="sortprice" name="sortprice" min="0" max="20000" step="1" value="15000">
+            </div>
+            <div class="output-area">
+              <output name="sortpriceval"></output>
+            </div>
+          </fieldset>
                 <fieldset>
                     <legend>СЕТКА</legend>
                     <ul>
@@ -41,30 +44,30 @@
                                 <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="Fixed">
                                 Фиксированная 
                             </li>
+                            <li><p>Резиновая</p></li>
                     </ul>
-                        <p>Резиновая</p>
                 </fieldset>
                 <fieldset>
                     <legend>ОСОБЕННОСТИ</legend>
                         <ul>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Слайдер" checked>
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Slider" checked>
                                 Слайдер
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Блок преимуществ">
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Benefit block">
                                 Блок преимуществ
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Новости" checked>
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="News" checked>
                                 Новости
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Галерея">
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Gallery">
                                 Галерея
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Корзина">
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Basket">
                                 Корзина
                             </li>
                         </ul>
@@ -72,31 +75,26 @@
                 <button type="submit" class="filter-button button">Показать</button>
             </form>
         </section>
+        <div>
+            <ul class="catalog-sorting">
+                <li class="catalog-sorting"><a href="#">ПО ЦЕНЕ</a></li>
+                <li class="catalog-sorting"><a href="#">ПО ТИПУ</a></li>
+                <li class="catalog-sorting"><a href="#">ПО НАЗВАНИЮ</a></li>
+                <li class="catalog-sorting"><a href="#">TOP</a></li>
+                <li class="catalog-sorting"><a href="#">BOTTOM</a></li>
+            </ul>
+        </div>
         <section class="catalog">
             <h2 class="visually-hidden">Список шаблонов</h2>
-            <!--сюда-->
-            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                    <legend>СОРТИРОВАТЬ</legend>
-                    <ul>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="by price" checked>
-                            ПО ЦЕНЕ</li>
-                        <li class="filter-option">
-                        <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="type">
-                            ПО ТИПУ</li>
-                        <li class="filter-option">
-                        <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="By name">
-                            ПО НАЗВАНИЮ</li>
-                    </ul>         
-                </fieldset>
-            </form>
-            <!--досюда-->
             <ul class="catalog-list">
                 <li class="catalog-item">
                     <p>
                         <a href="catalog-item.html">
                             <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон седона">
+                            <div class="outer">
+                                <div class="inner" img src="http://placehold.it/150x100" wight="150" height="100" alt="картинка при наведении">Информационный сайт для туристов</div>
+                                <input type="submit" value="9 900 руб.">
+                            </div>
                         </a>
                     </p>
                 </li>
@@ -137,7 +135,7 @@
                 </li>
             </ul>
             <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                <li class="pagination-item pagination-item-current"><a>1</a></li>
                 <li class="pagination-item"><a href="#">2</a></li>
                 <li class="pagination-item"><a href="#">3</a></li>
                 <li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
