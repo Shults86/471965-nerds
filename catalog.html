@@ -25,10 +25,6 @@
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
             <legend>Стоимость:</legend>
-            <div>
-              <label for="sort-price"></label>
-              <input type="range" id="sortprice" name="sortprice" min="0" max="20000" step="1" value="15000">
-            </div>
             <div class="filter">
                 <div class="filter-range-wrapper">
                     <div class="filter-range">
@@ -57,7 +53,8 @@
                                 <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="Fixed">
                                 Фиксированная 
                             </li>
-                            <li><p>Резиновая</p></li>
+                            <li class="filter-option">      
+                                <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="Rubber">Резиновая</li>
                     </ul>
                 </fieldset>
                 <fieldset>
@@ -90,11 +87,11 @@
         </section>
         <div>
             <ul class="catalog-sorting">
-                <li class="catalog-sorting"><a href="#">ПО ЦЕНЕ</a></li>
-                <li class="catalog-sorting"><a href="#">ПО ТИПУ</a></li>
-                <li class="catalog-sorting"><a href="#">ПО НАЗВАНИЮ</a></li>
-                <li class="catalog-sorting"><a href="#">TOP</a></li>
-                <li class="catalog-sorting"><a href="#">BOTTOM</a></li>
+                <li class="catalog-sorting"><a href="#">По цене</a></li>
+                <li class="catalog-sorting"><a href="#">По типу</a></li>
+                <li class="catalog-sorting"><a href="#">По названию</a></li>
+                <li class="catalog-sorting"><a href="#">По возрастанию</a></li>
+                <li class="catalog-sorting"><a href="#">По убыванию</a></li>
             </ul>
         </div>
         <section class="catalog">
@@ -104,8 +101,10 @@
                     <p>
                         <a href="catalog-item.html">
                             <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон седона">
-                            <div class="outer">
-                                <div class="inner" img src="http://placehold.it/150x100" wight="150" height="100" alt="картинка при наведении">Информационный сайт для туристов</div>
+                            <div class="item">
+                                <div class="item-decoration"></div>
+                                <img src="http://placehold.it/150x100" wight="150" height="100" alt="картинка при наведении">
+                                <div class="item-description">Информационный сайт для туристов</div>    
                                 <input type="submit" value="9 900 руб.">
                             </div>
                         </a>
