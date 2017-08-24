@@ -16,8 +16,10 @@
                     <li><a href="studia.html">СТУДИЯ</a></li>
                     <li><a href="klienty.html">КЛИЕНТЫ</a></li>
                     <li><a href="shop.html">МАГАЗИН</a></li>
-                    <li><a href="contacts.html">КОНТАКТЫ</a></li>   </ul>
-                <a href="#">КОРЗИНА</a>
+                    <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                    <li><a href="#">КОРЗИНА</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <main class="container">
@@ -46,30 +48,41 @@
                         <img src="http://placehold.it/150x100" wight="150" height="100" alt="Третий слайд">
                     </div>
                 </div>
-                <div class="toggles">
-                    <div class="toggle"></div>
-                    <div class="toggle"></div>
-                    <div class="toggle"></div>
-                </div>
+                <ul class="slides-switches">
+                    <li class="slide-radio">
+                        <button class="slide-btn"></button>
+                    </li>
+                    <li class="slide-radio">
+                        <button class="slide-btn"></button>
+                    </li>
+                    <li class="slide-radio">
+                        <button class="slide-btn"></button>
+                    </li>
+                </ul>
             </section>
             <section class="benefits">
                 <h2 class="visually-hidden">Услуги</h2>
                     <ul class="benefits-list">
                         <li class="benefits-item">
+                            <label>
                                 <h3>ВЕБ-САЙТЫ</h3>
                                 <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-                                <input type="button" value="Заказать">
-                                
+                                <input type="button"  value="Заказать">
+                            </label>    
                         </li>
                         <li class="benefits-item">
+                            <label>
                                 <h3>ПРИЛОЖЕНИЯ</h3>
                                 <p>Покорите топ-10 приложений в AppStore и Google Play</p>
                                 <input type="button" value="Заказать">
+                            </label>
                         </li>
                         <li class="benefits-item">
+                            <label>
                                 <h3>ПРЕЗЕНТАЦИИ</h3>
                                 <p>Вы даже не подозреваете насколько вы изумительны</p>
                                 <input type="button" value="Заказать">
+                            </label>
                         </li>
                     </ul>
             </section>
@@ -112,9 +125,14 @@
                         <li class="picture-list1"><img src="#" wight="150" heigt="100" alt="логотип клиента"></li>
                     </ul>
             </section>
-           <!--карта через css-->
             <section>
-                <img class="map" src="#" wight="100%" heigt="300" alt="карта">
+                <h3 class="visually-hidden">Как до нас добраться</h3>
+                <p>
+                <img src="http://placehold.it/150x100" class="map" src="#" wight="100%" heigt="300" alt="офис 191186, Санкт-Петербург <br>
+                    ул. Б. Конюшенная, д.19/8">
+                </p>
+            </section>
+            <section>
                     <h2 class="contacts">NЁRDS DESIGN STUDIO</h2>
                     <p>191186, Санкт-Петербург <br>
                     ул. Б. Конюшенная, д.19/8

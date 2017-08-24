@@ -48,39 +48,41 @@
                     <legend>СЕТКА</legend>
                     <ul>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="Adaptive" checked>
-                                Адаптивная
+                                <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="Adaptive" id="filter-Adaptive" checked>
+                                <label for="filter-Adaptive">Адаптивная</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="Fixed">
-                                Фиксированная 
+                                <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="Fixed" id="filter-Fixed">
+                                <label for="filter-Fixed">Фиксированная</label>
                             </li>
                             <li class="filter-option">      
-                                <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="Rubber">Резиновая</li>
+                                <input class="visually-hidden filter-imput-radio" type="radio" name="product-group" value="Rubber"id="filter-Rubber">
+                                <label for="filter-Rubber">Резиновая</label>
+                            </li>
                     </ul>
                 </fieldset>
                 <fieldset>
                     <legend>ОСОБЕННОСТИ</legend>
                         <ul>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Slider" checked>
-                                Слайдер
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Slider" id="filter-Slider" checked>
+                                <label for="filter-Slider">Слайдер</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Benefit block">
-                                Блок преимуществ
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Benefit-block" id="filter-Benefit-block">
+                                <label for="filter-Benefit-block">Блок преимуществ</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="News" checked>
-                                Новости
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="News" id="filter-News" checked>
+                                <label for="filter-News">Новости</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Gallery">
-                                Галерея
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Gallery" id="filter-Gallery">
+                                <label for="filter-Gallery">Галерея</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Basket">
-                                Корзина
+                                <input class="visually-hidden filter-imput-checkbox" type="checkbox" name="Basket" id="filter-Basket">
+                                <label for="filter-Basket">Корзина</label>
                             </li>
                         </ul>
                 </fieldset>
@@ -100,42 +102,77 @@
             <h2 class="visually-hidden">Список шаблонов</h2>
             <ul class="catalog-list">
                 <li class="catalog-item">
-                        <div class="item-decoration">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                            <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон седона" class="item-image">
-                                    <div class="item-description">
-                                        <h3>sedona</h3>
-                                    Информационный сайт для туристов    
-                                    <input type="button" value="9 900 руб.">
-                                    </div>
+                    <div class="item-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон седона" class="item-image">
+                            <div class="item-description">
+                            <h3>sedona</h3>
+                            Информационный сайт для туристов   
+                            <input type="button" value="9 900 руб.">
+                            </div>
                 </li>
                 <li class="catalog-item">
-                        <a href="catalog-item.html">
-                            <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон Пинк">
-                        </a>
+                    <div class="item-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон Пинк">
+                            <div class="item-description">
+                            <h3>Pink App</h3>
+                            Информационный сайт для туристов    <input type="button" value="9 900 руб.">
+                            </div>
                 </li>
                 <li class="catalog-item">
-                        <a href="catalog-item.html">
-                            <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон бородинский">
-                        </a>
+                    <div class="item-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон бородинский">
+                            <div class="item-description">
+                            <h3>Barbershop</h3>
+                            Информационный сайт для туристов   <input type="button" value="9 900 руб.">
+                            </div>
                 </li>
                 <li class="catalog-item">
-                        <a href="catalog-item.html">
-                            <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон Мишка">
-                        </a>
+                    <div class="item-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон Мишка">
+                            <div class="item-description">
+                            <h3>Mishka</h3>
+                            Информационный сайт для туристов   <input type="button" value="9 900 руб.">
+                            </div>
                 </li>
                 <li class="catalog-item">
-                    <a href="catalog-item.html">
-                            <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон А+">
-                        </a>
+                    <div class="item-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон А+">
+                            <div class="item-description">
+                            <h3>A Plus</h3>
+                            Информационный сайт для туристов   <input type="button" value="9 900 руб.">
+                            </div>   
                 </li>
-                <li class="catalog-item">
-                        <a href="catalog-item.html">
-                            <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон Кваст">
-                        </a>
+                <li class="catalog-item">  
+                    <div class="item-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="шаблон Кваст">
+                            <div class="item-description">
+                            <h3>Кваст</h3>
+                            Информационный сайт для туристов   <input type="button" value="9 900 руб.">
+                            </div>
                 </li>
             </ul>
             <ul class="pagination-list">
