@@ -3,12 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>nerds</title>
-        <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="inner-page">
         <header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo" href="index.html">
@@ -52,15 +51,15 @@
                         <legend>Сетка</legend>
                         <ul>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-Adaptive" checked>
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-Adaptive" checked>
                                 <label for="filter-Adaptive">Адаптивная</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input-radio" type="radio" name="product-group" value="Fixed" id="filter-Fixed">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="Fixed" id="filter-Fixed">
                                 <label for="filter-Fixed">Фиксированная</label>
                             </li>
                             <li class="filter-option">      
-                                <input class="visually-hidden filter-input-radio" type="radio" name="product-group" value="Rubber"id="filter-Rubber">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="Rubber"id="filter-Rubber">
                                 <label for="filter-Rubber">Резиновая</label>
                             </li>
                         </ul>
@@ -69,23 +68,23 @@
                         <legend>Особенности</legend>
                             <ul>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="filter-Slider" checked>
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-Slider" checked>
                                     <label for="filter-Slider">Слайдер</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="benefit-block" id="filter-Benefit-block">
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefit-block" id="filter-Benefit-block">
                                     <label for="filter-Benefit-block">Блок преимуществ</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="filter-News" checked>
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-News" checked>
                                     <label for="filter-News">Новости</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="filter-Gallery">
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-Gallery">
                                     <label for="filter-Gallery">Галерея</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket" id="filter-Basket">
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-Basket">
                                     <label for="filter-Basket">Корзина</label>
                                 </li>
                             </ul>
@@ -94,13 +93,13 @@
                 </form>
             </section>
             <div>
-                <p>Сортировать</p>
-                <ul class="catalog-sorting">
-                    <li class="catalog-sorting"><a href="#">По цене</a></li>
-                    <li class="catalog-sorting"><a href="#">По типу</a></li>
-                    <li class="catalog-sorting"><a href="#">По названию</a></li>
-                    <li class="catalog-sorting"><a href="#">По возрастанию</a></li>
-                    <li class="catalog-sorting"><a href="#">По убыванию</a></li>
+                <p class="sorting">Сортировать</p>
+                <ul class="catalog-sorting-ul">
+                    <li class="catalog-sorting sorting-point sorting-click"><a href="#">По цене</a></li>
+                    <li class="catalog-sorting sorting-point sorting-click"><a href="#">По типу</a></li>
+                    <li class="catalog-sorting sorting-point sorting-click"><a href="#">По названию</a></li>
+                    <li class="catalog-sorting sorting-point sorting-click"><a href="#">По возрастанию</a></li>
+                    <li class="catalog-sorting sorting-point sorting-click"><a href="#">По убыванию</a></li>
                 </ul>
             </div>
             <section class="catalog">
@@ -115,7 +114,7 @@
                         <img src="img\content\img-sedona.jpg" width="360" height="576" alt="шаблон седона" class="item-image">
                         <div class="item-description">
                             <a href="#"><h3>sedona</h3></a>
-                            Информационный сайт для туристов   
+                            <p class="template-description">Информационный сайт для туристов</p> 
                             <input type="button" value="9 900 руб.">
                         </div>
                     </li>
@@ -128,8 +127,8 @@
                         <img src="img\content\img-pink.jpg" width="360" height="576" alt="шаблон Пинк">
                         <div class="item-description">
                             <a href="#"><h3>Pink App</h3></a>
-                            <p>Продуктовый лендинг приложения для IOS и Android</p>    
-                            <input type="button" value="9 900 руб.">
+                            <p class="template-description">Продуктовый лендинг приложения для IOS и Android</p>    
+                            <input type="button" class="button-order" value="9 900 руб.">
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -141,8 +140,8 @@
                         <img src="img\content\img-barbershop.jpg" width="360" height="576" alt="шаблон бородинский">
                         <div class="item-description">
                             <a href="#"><h3>Barbershop</h3></a>
-                            <p>Сайт салоны красоты. Для мужчин, да</p>   
-                            <input type="button" value="9 900 руб.">
+                            <p class="template-description">Сайт салоны красоты. Для мужчин, да</p>   
+                            <input type="button" class="button-order" value="9 900 руб.">
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -154,8 +153,8 @@
                         <img src="img\content\img-mishka.jpg" width="360" height="576" alt="шаблон Мишка">
                         <div class="item-description">
                             <a href="#"><h3>Mishka</h3></a>
-                            <p>Интернет-магазин вязаных игрушек</p>   
-                            <input type="button" value="9 900 руб.">
+                            <p class="template-description">Интернет-магазин вязаных игрушек</p>   
+                            <input type="button" class="button-order" value="9 900 руб.">
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -167,8 +166,8 @@
                         <img src="img\content\img-aplus.jpg" width="360" height="576" alt="шаблон А+">
                         <div class="item-description">
                             <a href="#"><h3>A Plus</h3></a>
-                            <p>Лендинг курсов повышения квалификации</p>   
-                            <input type="button" value="9 900 руб.">
+                            <p class="template-description">Лендинг курсов повышения квалификации</p>   
+                            <input type="button" class="button-order" value="9 900 руб.">
                         </div>   
                     </li>
                     <li class="catalog-item">  
@@ -180,8 +179,8 @@
                         <img src="C:img\content\img-kvast.jpg" width="360" height="576" alt="шаблон Кваст">
                         <div class="item-description">
                             <a href="#"><h3>Кваст</h3></a>
-                            <p>Промо-сайт производителя крафтового кваса</p>   
-                            <input type="button" value="9 900 руб.">
+                            <p class="template-description">Промо-сайт производителя крафтового кваса</p>   
+                            <input type="button" class="button-order" value="9 900 руб.">
                         </div>
                     </li>
                 </ul>
