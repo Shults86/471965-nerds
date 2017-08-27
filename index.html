@@ -3,13 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>nerds</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo">
-                    <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="логотип проект нердс">
+                    <img src="img\design\nerds-logo.svg" width="160" height="65" alt="логотип проект нердс">
                 </a>    
                 <ul class="site-navigation">
                     <li><a href="#">Студия</a></li>
@@ -23,67 +25,67 @@
             </nav>
         </header>
         <main class="container">
-            <h1 class="visually-hidden">nerds</h1>     
-            <section class="slider">
-                <h2 class="visually-hidden">Выгоды</h2>
-                <div class="slides">
-                    <div class="slide">                   
-                        <b>Долго, дорого, <br>
-                        скурпулезно.</b>
-                        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-                        <a href="#" class="button">Узнать больше</a>
-                        <img src="http://placehold.it/150x100" widht="150" height="100" alt="Первый слайд">
-                    </div> 
-                    <div class="slide">
-                        <b>Любим математику как никто другой</b>
-                        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-                        <a href="#" class="button">Узнать больше</a>
-                        <img src="http://placehold.it/150x100" widht="150" height="100" alt="Второй слайд">
+            <h1 class="visually-hidden">nerds</h1> 
+                <section class="slider">
+                    <h2 class="visually-hidden">Выгоды</h2>
+                    <div class="slides">
+                        <div class="slide">                   
+                            <b class="slide-header-feature">Долго, дорого, <br>
+                            скурпулезно.</b>
+                            <p class="slide-feature">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+                            <a href="#" class="slide-button">Узнать больше</a>
+                            <img src="img\content\slide1.png" widht="700" height="415" alt="Первый слайд">
+                        </div> 
+                        <div class="slide">
+                            <b class="slide-header-feature">Любим математику как никто другой</b>
+                            <p class="slide-feature">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+                            <a href="#" class="slide-button">Узнать больше</a>
+                            <img src="img\content\slide2.png" widht="665" height="430" alt="Второй слайд">
+                        </div>
+                        <div class="slide">
+                            <b class="slide-header-feature">Только ночь, только хардкор</b>
+                            <p class="slide-feature">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                            <a href="#" class="slide-button">Узнать больше</a>
+                            <img src="img\content\slide3.png" widht="760" height="410" alt="Третий слайд">
+                        </div>
                     </div>
-                    <div class="slide">
-                        <b>Только ночь, только хардкор</b>
-                        <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                        <a href="#" class="button">Узнать больше</a>
-                        <img src="http://placehold.it/150x100" widht="150" height="100" alt="Третий слайд">
-                    </div>
-                </div>
-                <ul class="slides-switches">
-                    <li class="slide-radio">
-                        <button class="slide-btn">первый слайд</button>
-                    </li>
-                    <li class="slide-radio">
-                        <button class="slide-btn">второй слайд</button>
-                    </li>
-                    <li class="slide-radio">
-                        <button class="slide-btn">третий слайд</button>
-                    </li>
-                </ul>
-            </section>
-            <section class="benefits">
-                <h2 class="visually-hidden">Услуги</h2>
-                <ul class="benefits-list">
-                    <li class="benefits-item">
-                        <h3>Веб-сайты</h3>
-                        <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-                        <a class="button" href="catalog.html">Заказать</a>   
-                    </li>
-                    <li class="benefits-item">
-                        <h3>Приложения</h3>
-                        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                        <a class="button" href="catalog.html">Заказать</a>
-                    </li>
-                    <li class="benefits-item">
-                        <h3>Презентации</h3>
-                        <p>Вы даже не подозреваете насколько вы изумительны</p>
-                        <a class="button" href="catalog.html">Заказать</a>
-                    </li>
-                </ul>
-            </section>
+                    <ul class="slides-switches">
+                        <li class="slide-radio">
+                            <button class="slide-btn">первый слайд</button>
+                        </li>
+                        <li class="slide-radio">
+                            <button class="slide-btn">второй слайд</button>
+                        </li>
+                        <li class="slide-radio">
+                            <button class="slide-btn">третий слайд</button>
+                        </li>
+                    </ul>
+                </section>
+                <section class="benefits">
+                    <h2 class="visually-hidden">Услуги</h2>
+                    <ul class="benefits-list">
+                        <li class="benefits-item">
+                            <h3>Веб-сайты</h3>
+                            <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+                            <a class="benefits-button-sites" href="catalog.html">Заказать</a>   
+                        </li>
+                        <li class="benefits-item">
+                            <h3>Приложения</h3>
+                            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                            <a class="benefits-button-annexes" href="catalog.html">Заказать</a>
+                        </li>
+                        <li class="benefits-item">
+                            <h3>Презентации</h3>
+                            <p>Вы даже не подозреваете насколько вы изумительны</p>
+                            <a class="benefits-button-presentations" href="catalog.html">Заказать</a>
+                        </li>
+                    </ul>
+                </section>
             <section class="benefits-two">
                 <h2 class="visually-hidden">Услуги</h2>
                 <b>Мы маленькая, но гордая дизайн-студия из Краснодара</b>
                 <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-                <h3>Выполняем заказына разработку:</h3>
+                <h3>Выполняем заказы на разработку:</h3>
                 <ul> 
                     <!--какой клас поставить?-->
                     <li>Веб-сайтов любой сложности</li>
@@ -94,7 +96,7 @@
             <section class="features">
                 <h2 class="visually-hidden">Выгоды</h2>
                 <img src="img\content\nerds-illustration.png" Weigt="360" height="210" alt="Логотип нердс 2">
-                <p>С 2004 года любим точность во всем:</p>
+                <p class="features-p">С 2004 года любим точность во всем:</p>
                 <ul class="list">
                     <li class="item">
                         <div class="title">146%</div>
@@ -113,10 +115,26 @@
             <section class="picture">
                 <h2 class="visually-hidden">Наши клиенты</h2>
                 <ul>
-                    <li class="picture-list1"><img src="img\content\logo-1.png" widht="200" heigt="70" alt="логотип клиента"></li>
-                    <li class="picture-list1"><img src="img\content\logo-2.png" widht="210" heigt="90" alt="логотип клиента"></li>
-                    <li class="picture-list1"><img src="img\content\logo-3.png" widht="185" heigt="55" alt="логотип клиента"></li>
-                    <li class="picture-list1"><img src="img\content\logo-4.png" widht="175" heigt="85" alt="логотип клиента"></li>
+                    <li class="picture-list1">
+                        <a href="#">
+                            <img src="img\content\logo-1.png" widht="200" heigt="70" alt="логотип клиента">
+                        </a>
+                    </li>
+                    <li class="picture-list2">
+                        <a href="#">
+                            <img src="img\content\logo-2.png" widht="210" heigt="90" alt="логотип клиента">
+                        </a>
+                    </li>
+                    <li class="picture-list3">
+                        <a href="#">
+                            <img src="img\content\logo-3.png" widht="185" heigt="55" alt="логотип клиента">
+                        </a>
+                    </li>
+                    <li class="picture-list4">
+                        <a href="#">
+                            <img src="img\content\logo-4.png" widht="175" heigt="85" alt="логотип клиента">
+                            </a>
+                    </li>
                 </ul>
             </section>
             <section>
@@ -126,11 +144,11 @@
                     ул. Б. Конюшенная, д.19/8">
                 </p>
                 <div>
-                    <h2 class="contacts">Nёrds design studio</h2>
-                    <p>191186, Санкт-Петербург <br>
-                    ул. Б. Конюшенная, д.19/8</p>
-                    <p>тел. +7(812)275-75-75</p>
-                    <a class="button contacts-button" href="#">напишите нам</a>
+                    <h3 class="contacts">Nёrds design studio</h3>
+                    <p class="contacts-p">191186, Санкт-Петербург <br>
+                    ул. Б. Конюшенная, д.19/8<br>
+                    тел. +7(812)275-75-75</p>
+                    <a class="button-contacts-button" href="#">напишите нам</a>
                 </div>
             </section>
         </main>
@@ -140,10 +158,10 @@
                 <li><a class="social-button" href="#">Фейсбук</a></li>
                 <li><a class="social-button" href="#">Инстаграм</a></li>
             </ul>
-            <p class="footer_be-friends">
-                <b>Давайте дружить, это выгодно</b>
-                Скидка 10% для друзей из социальных сетей
-            </p>
+            <div class="footer_be-friends">
+                <b class="be-friends">Давайте дружить, это выгодно</b>
+                <p class="discount">Скидка 10% для друзей из социальных сетей</p>
+            </div>
         </footer>
     </body>
 </html>

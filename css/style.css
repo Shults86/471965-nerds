@@ -4,6 +4,7 @@ body {
     line-height: 24px;
     color: #283136;
     font-weight: regular;
+    background-color: #ffffff;
 }
 .benefits-item h3 {
     font-family: roboto, Arial, sans-serif;
@@ -12,10 +13,251 @@ body {
     color: #000000;
     font-weight: bold;
 }
-.contacts h2 {
-    font-family: roboto, Arial, sans-serif;
+a {
+    text-decoration: none;
+}
+.benefits-button,
+.slide-button {
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+.main-header-logo {
+    color: 000000;
+}
+
+.main-header-logo:hover {
+    color: 000000;
+    opacity: 0.7;
+}
+.main-header-logo:active {
+    color: 000000;
+    opacity: 0.5;
+}
+.main-navigation {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: #eeeeee;
+}
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+    color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    color: #fb565a;
+}
+.site-navigation a:active,
+.site-navigation a:active {
+    opacity: 0.5;
+    color: #000000
+}
+.site-navigation a:focus,
+.user-navigation a:focus {
+    color: #000000
+    text-decoration: underline;    
+}
+.slider {
+    color: #000000;
+    background-color: #eeeeee;
+}
+.slide-button {
+    color: #ffffff;
+    background-color: #fb565a;
+    text-transform: uppercase;
+}
+.slide-button:hover {
+    color: #ffffff;
+    background-color: #e74246;
+    text-transform: uppercase;
+}
+.slide-button:active {
+    background-color: #d7373b;
+    text-transform: uppercase;
+}
+.slide-header-feature slides {
+    font-size: 55px;
+    line-height: 55px;
+}
+.slide-feature slides{
+    font-size: 16px;
+}
+.benefits {
+    color: #000000;
+    background-color: #ffffff;
+}
+.benefits h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+.benefits-list {
+    list-style: none;
+}
+.benefits-button-sites {
+    color: #ffffff;
+    background-color: #fb565a;
+    text-transform: uppercase;
+}
+.benefits-button-sites:hover {
+    color: #ffffff;
+    background-color: #e74246;
+    text-transform: uppercase;
+}
+.benefits-button-sites:active {
+    color: #ffffff;
+    opacity: 0.2;
+    background-color: #d7373b;
+    text-transform: uppercase;
+}
+.benefits-button-annexes {
+    color: #ffffff;
+    background-color: #00ca74;
+    text-transform: uppercase;
+}
+.benefits-button-annexes:hover {
+    color: #ffffff;
+    background-color: #00bc6c;
+    text-transform: uppercase;
+}
+.benefits-button-annexes:active {
+    color: #ffffff;
+    opacity: 0.2;
+    background-color: #00aa62;
+    text-transform: uppercase;
+}
+.benefits-button-presentations {
+    color: #ffffff;
+    background-color: #efc84a;
+    text-transform: uppercase;
+}
+.benefits-button-presentations:hover {
+    color: #ffffff;
+    background-color: #eab534;
+    text-transform: uppercase;
+}
+.benefits-button-presentations:active {
+    color: #ffffff;
+    background-color: #e5a722;
+    text-transform: uppercase;
+}
+.benefits-two {
+    color: #000000;
+    
+    background-color: #ffffff;
+}
+.benefits-two {
+    /* не нашел что стилизовать*/
+}
+.features-p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.title {
+    color: #000000;
+    font-size: 45px;
+    line-height: 10px;
+    font-weight: bold;
+}
+.value {
+    color: #000000;
+    font-size: 16px;
+    line-height: 18px;
+}
+.picture-list1:hover,
+.picture-list2:hover,
+.picture-list3:hover,
+.picture-list4:hover {
+    opacity: 1;
+}
+.picture-list1,
+.picture-list2,
+.picture-list3,
+.picture-list4 {
+    opacity: 0.3;
+}
+.picture-list1:active,
+.picture-list2:active,
+.picture-list3:active,
+.picture-list4:active {
+    opacity: 0.1;
+}
+.contacts {
+    font-family: roboto, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
     color: #000000;
     font-weight: bold;
 }
+.contacts-p {
+    font-family: roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+    font-weight: normal;
+}
+.button-contacts-button {
+    font-family: roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #fb565a;
+    text-transform: uppercase;
+}
+.main-footer {
+    background-color: #ffffff;
+}
+.social-button {
+    color: #ffffff;
+    background-color: #e1e1e1;
+}
+.social-button:hover {
+    color: #ffffff;
+    background-color: #e74246;
+}
+.social-button:focus {
+    color: #ffffff;
+    background-color: #e74246;
+}
+.social-button:active {
+    color: #ffffff;
+    background-color: #d7373b;
+}
+.be-friends {
+    font-family: roboto, Arial, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    font-weight: bold;
+}}
+.discount {
+    font-family: roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: normal;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
