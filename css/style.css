@@ -12,13 +12,7 @@ body {
     line-height: 30px;
     color: #000000;
     font-weight: bold;
-}
-.benefits-item h3 {
-    font-family: roboto, Arial, sans-serif;
-    font-size: 24px;
-    line-height: 30px;
-    color: #000000;
-    font-weight: bold;
+    text-transform: uppercase;
 }
 a {
     text-decoration: none;
@@ -44,7 +38,6 @@ a {
 .main-navigation {
     font-size: 16px;
     line-height: 30px;
-    color: #ffffff;
     background-color: #eeeeee;
 }
 .site-navigation,
@@ -62,15 +55,9 @@ a {
     color: #fb565a;
 }
 .site-navigation a:active,
-.site-navigation a:active {
-    opacity: 0.5;
-    color: #000000
-}
-.site-navigation a:focus,
-.user-navigation a:focus {
+.user-navigation a:active {
+    opacity: 0.3;
     color: #000000;
-    text-decoration: underline red;
-    
 }
 .slider {
     color: #000000;
@@ -82,78 +69,65 @@ a {
     text-transform: uppercase;
 }
 .slide-button:hover {
-    color: #ffffff;
     background-color: #e74246;
-    text-transform: uppercase;
 }
 .slide-button:active {
     background-color: #d7373b;
-    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
 }
 .slide-header-feature {
     font-size: 55px;
     line-height: 55px;
 }
-.slide-feature slides{
+.slide-feature slide {
     font-size: 16px;
 }
 .benefits {
     color: #000000;
     background-color: #ffffff;
 }
-.benefits h3 {
-    font-size: 24px;
-    line-height: 30px;
-}
 .benefits-list {
     list-style: none;
 }
-.benefits-button-sites {
+.benefits-item a {
+    font-family: roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px
+    text-transform: uppercase;
     color: #ffffff;
+}
+.benefits-sites a {
     background-color: #fb565a;
-    text-transform: uppercase;
 }
-.benefits-button-sites:hover {
-    color: #ffffff;
+.benefits-sites a:focus,
+.benefits-sites a:hover {
     background-color: #e74246;
-    text-transform: uppercase;
 }
-.benefits-button-sites:active {
-    color: #ffffff;
-    opacity: 0.2;
+.benefits-sites a:active {
     background-color: #d7373b;
-    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
 }
-.benefits-button-annexes {
-    color: #ffffff;
+.benefits-annexes a {
     background-color: #00ca74;
-    text-transform: uppercase;
 }
-.benefits-button-annexes:hover {
-    color: #ffffff;
+.benefits-annexes a:focus,
+.benefits-annexes a:hover {
     background-color: #00bc6c;
-    text-transform: uppercase;
 }
-.benefits-button-annexes:active {
-    color: #ffffff;
-    opacity: 0.2;
+.benefits-annexes a:active {
     background-color: #00aa62;
-    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
 }
-.benefits-button-presentations {
-    color: #ffffff;
+.benefits-order a {
     background-color: #efc84a;
-    text-transform: uppercase;
 }
-.benefits-button-presentations:hover {
-    color: #ffffff;
+.benefits-order a:focus,
+.benefits-order a:hover {
     background-color: #eab534;
-    text-transform: uppercase;
 }
-.benefits-button-presentations:active {
-    color: #ffffff;
+.benefits-order a:active {
     background-color: #e5a722;
-    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
 }
 .benefits-two {
     color: #000000;
@@ -171,6 +145,7 @@ a {
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 .features-p {
     color: #000000;
@@ -198,7 +173,7 @@ a {
 .picture-list2,
 .picture-list3,
 .picture-list4 {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 .picture-list1:active,
 .picture-list2:active,
@@ -236,15 +211,13 @@ a {
     background-color: #e1e1e1;
 }
 .social-button:hover {
-    color: #ffffff;
     background-color: #e74246;
 }
 .social-button:focus {
-    color: #ffffff;
     background-color: #e74246;
 }
 .social-button:active {
-    color: #ffffff;
+    color: rgba(255,255,255,0.3);
     background-color: #d7373b;
 }
 .be-friends {
@@ -273,7 +246,7 @@ a {
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
-
+    text-transform: uppercase;
 }
 .filter ul {
     list-style: none;
@@ -302,30 +275,30 @@ a {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+    text-transform: uppercase;
 }
-.catalog-sorting {
+.catalog-sorting a{
     color: #000000;
-    opacity: 0.2;
+    opacity: 0.3;
 }
-.sorting-point:hover {
+.catalog-sorting a:hover {
     color: #000000;
-    opacity: 0.5;
+    opacity: 0.6;
 }
-.sorting-click a:active {
+.catalog-sorting a:active {
     color: #000000;
     opacity: 1;
 }
 .catalog-list {
     list-style: none;
 }
-.catalog-item a{
-    color: #000000;
-}
 .catalog-item h3 {
+    color: #000000;
     font-size: 18px;
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
+    
 }
 .template-description {
     color: #666666;
@@ -352,7 +325,7 @@ a {
 .pagination-item a {
     color: #000000;
 
-  background-color: #eeeeee;
+    background-color: #eeeeee;
 }
 .pagination-item a:hover {
     background-color: #dfdfdf;
