@@ -24,7 +24,7 @@ a {
     text-transform: uppercase;
 }
 .main-header-logo {
-    color: #000000;
+    color: #000
 }
 
 .main-header-logo:hover {
@@ -39,10 +39,18 @@ a {
     font-size: 16px;
     line-height: 30px;
     background-color: #eeeeee;
+    
+}
+.site-navigation li {
+    display: inline;
+    margin-right: 50px;
+    
 }
 .site-navigation,
 .user-navigation {
-    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style: none;   
 }
 .site-navigation a,
 .user-navigation a {
@@ -350,9 +358,121 @@ a {
 .pagination-item-current a:focus, {
     border-color: #dfdfdf;
 }
+ /* ----- Сеточные стили ----- */
 
 
- 
+html,
+body {
+    min-width: 1200px;
+    min-height: 1750px;
+}
+.container {
+    width: 100%;
+    margin: 0 20;
+    padding: 0 20px;
+    
+}
+.main-header {
+    margin-bottom: 18;
+    
+}
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+}
+.main-header-logo {
+    width: 160px;
+    height: 65px;
+}
+.main-navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.site-navigation {
+    width: 520px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.user-navigation {
+    width: 170px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 80px;
+}
+
+.benefits-item {
+    width: 300px;
+}
+.benefits-two-column {
+    display: flex;
+    justify-content: space-between;
+    min-height: 525px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.benefits-two {
+    width: 700px;
+}
+.features {
+    width: 400px;
+}
+
+.picture-item {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    list-style: none;
+}
+
+.picture-list1 {
+    width: 260px;
+}
+.picture-list2 {
+    width: 260px;
+}
+.picture-list3 {
+    width: 260px;
+}
+.picture-list4 {
+    width: 260px;
+}
+
+/* пошел подвал*/
+
+.main-footer .container {
+    display: flex;
+}
+
+.footer-social {
+    margin: 0;
+    width: 260px;
+    margin-left: 80px;
+    list-style: none;
+}
+
+.footer_be-friends {
+    margin-left: 80px;
+    width: 560px;
+    margin: 0;
+}
+
+
+
+
 
 
 
