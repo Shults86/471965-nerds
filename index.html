@@ -9,57 +9,52 @@
     </head>
     <body class="inner-page">
         <header class="main-header">
-            <nav class="main-navigation">
-                <a class="main-header-logo">
-                        <img src="img\design\nerds-logo.svg" width="160" height="65" alt="логотип проект нердс">
-                </a>
-                <ul class="site-navigation">
-                    <li><a href="#">Студия</a></li>
-                    <li><a href="#">Клиенты</a></li>
-                    <li><a href="catalog.html">Магазин</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-                <ul class="user-navigation">
-                    <li><a href="#">Корзина</a></li>
-                </ul>
-            </nav>
+            <div class="container header-container">
+                <nav class="main-navigation">
+                    <a href="index.html" class="main-header-logo">
+                            <img src="img\design\nerds-logo.svg" width="160" height="65" alt="логотип проект нердс">
+                    </a>
+                    <ul class="site-navigation">
+                        <li><a href="#">Студия</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="catalog.html">Магазин</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="user-navigation">
+                        <li class="basket-link"><a href="#">Корзина</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main class="container">
             <h1 class="visually-hidden">nerds</h1> 
                 <section class="slider">
-                    <h2 class="visually-hidden">Выгоды</h2>
-                    <div class="slides">
-                        <div class="slide">                   
-                            <b class="slide-header-feature">Долго, дорого, <br>
-                            скурпулезно.</b>
-                            <p class="slide-feature">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-                            <a href="#" class="slide-button">Узнать больше</a>
-                            <img src="img\content\slide1.png" widht="700" height="415" alt="Первый слайд">
-                        </div> 
-                        <div class="slide">
-                            <b class="slide-header-feature">Любим математику<br> как никто другой</b>
-                            <p class="slide-feature">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-                            <a href="#" class="slide-button">Узнать больше</a>
-                            <img src="img\content\slide2.png" widht="665" height="430" alt="Второй слайд">
-                        </div>
-                        <div class="slide">
-                            <b class="slide-header-feature">Только ночь,<br> только хардкор</b>
-                            <p class="slide-feature">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                            <a href="#" class="slide-button">Узнать больше</a>
-                            <img src="img\content\slide3.png" widht="760" height="410" alt="Третий слайд">
-                        </div>
+                    <div class="slider-controls">
+                        <i class="active"></i>
+                        <i></i>
+                        <i></i>
                     </div>
-                    <ul class="slides-switches">
-                        <li class="slide-radio">
-                            <button class="slide-btn">первый слайд</button>
-                        </li>
-                        <li class="slide-radio">
-                            <button class="slide-btn">второй слайд</button>
-                        </li>
-                        <li class="slide-radio">
-                            <button class="slide-btn">третий слайд</button>
-                        </li>
-                    </ul>
+                        <div class="slides">
+                            <h2 class="visually-hidden">Выгоды</h2>
+                            <div class="slide">
+                                <div class="slide-text">                   
+                                    <div class="slide-title">Долго, дорого, <br>
+                                        скурпулезно.</div>
+                                    <p class="slide-feature">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+                                    <a href="#" class="button slide-button">Узнать больше</a>
+                                </div> 
+                                <div class="slide-text">
+                                    <div class="slide-title">Любим математику<br> как никто другой</div>
+                                    <p class="slide-feature">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+                                    <a href="#" class="button slide-button">Узнать больше</a>
+                                </div>
+                                <div class="slide-text">
+                                    <div class="slide-title">Только ночь,<br> только хардкор</div>
+                                    <p class="slide-feature">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                                    <a href="#" class="button slide-button">Узнать больше</a>
+                                </div>
+                            </div>
+                        </div>
                 </section>
                 <section class="benefits">
                     <h2 class="visually-hidden">Услуги</h2>
@@ -67,17 +62,17 @@
                         <li class="benefits-item benefits-sites">
                             <h3 class="benefits">Веб-сайты</h3>
                             <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-                            <a href="catalog.html">Заказать</a>   
+                            <a class="button" href="catalog.html">Заказать</a>   
                         </li>
                         <li class="benefits-item benefits-annexes">
-                            <h3>Приложения</h3>
+                            <h3 class="benefits">Приложения</h3>
                             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                            <a href="catalog.html">Заказать</a>
+                            <a class="button" href="catalog.html">Заказать</a>
                         </li>
                         <li class="benefits-item benefits-order">
-                            <h3>Презентации</h3>
+                            <h3 class="benefits">Презентации</h3>
                             <p>Вы даже не подозреваете насколько вы изумительны</p>
-                            <a href="catalog.html">Заказать</a>
+                            <a class="button" href="catalog.html">Заказать</a>
                         </li>
                     </ul>
                 </section>
@@ -152,7 +147,7 @@
                         <p class="contacts-p">191186, Санкт-Петербург <br>
                         ул. Б. Конюшенная, д.19/8<br>
                         тел. +7(812)275-75-75</p>
-                        <a class="button-contacts-button" href="#">напишите нам</a>
+                        <a class="button button-contacts-button" href="#">напишите нам</a>
                     </div>
                 </div>
             </section>

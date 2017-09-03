@@ -17,6 +17,34 @@ body {
 a {
     text-decoration: none;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+.button {
+    display: inline-block;
+    padding: 16px 40px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    color: #ffffff;
+    text-align: center;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    
+    clip-path: inset(100%);
+    clip: rect(0.0.0.0);
+    overflow: hidden;
+}
 .benefits-button,
 .slide-button {
     text-align: center;
@@ -24,7 +52,7 @@ a {
     text-transform: uppercase;
 }
 .main-header-logo {
-    color: #000
+    color: #000000;
 }
 
 .main-header-logo:hover {
@@ -41,9 +69,10 @@ a {
     background-color: #eeeeee;
     
 }
-.site-navigation li {
-    display: inline;
-    margin-right: 50px;
+.site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
     
 }
 .site-navigation,
@@ -52,9 +81,15 @@ a {
     text-transform: uppercase;
     list-style: none;   
 }
+.user-navigation {
+    display: flex;
+    max-width: 140px;
+}
 .site-navigation a,
 .user-navigation a {
+    display: block;
     color: #000000;
+    padding: 30px 25px;
 }
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -67,14 +102,102 @@ a {
     opacity: 0.3;
     color: #000000;
 }
+.user-navigation .basket-link {
+    position: relative;
+    padding-left: 50px;
+}
+.basket-link::before {
+    content: "";
+    
+    position: absolute;
+    top: 36px;
+    left: 40px;
+    
+    width: 15px;
+    height: 15px;
+    
+    background-image: url("img/design/basket-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;   
+}
 .slider {
     color: #000000;
     background-color: #eeeeee;
+    position:relative;
+    width: 1130px;
+    height: 415px;
+    margin: 0 auto;
+}
+.slider-controls {
+    position:absolute;
+    bottom:95px;
+    left:50%;
+    width:200px;
+    height:10px;
+    margin-left:-100px;
+    text-align:center;
+    z-index:1000;
+}
+.slider-controls i {
+    display:inline-block;
+    width:4px;
+    height:4px;
+    margin:0 3px;
+    background:white;
+    border:3px solid white;
+    vertical-align:top;
+    border-radius:50%;
+    cursor:pointer;
+}
+.slider-controls .active {
+    background: #c1c1c1;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.slide-text 
+    width: 380px;
+    padding: 30px 0;
+    color: #283136;
+}
+.slide-title {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: bold;
+    color: black;
+}
+.slide:nth-child(1) {
+    background-image: url("img\design\slide1.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
+}
+.slide {
+    display:none;
+}
+.slide:nth-child(3) {
+    display: block;
+}
+.slide:nth-child(2){
+    background-image:url("img\design\slide2.png");
+    background-repeat:no-repeat;
+    background-position:100% 10px;
+}
+.slide:nth-child(3){
+    background-image:url("img\designslide3.png");
+    background-repeat:no-repeat;
+    background-position:100% 0;
 }
 .slide-button {
-    color: #ffffff;
-    background-color: #fb565a;
-    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 12px;
+    text-decoration: none;
+    background: #fb565a;
 }
 .slide-button:hover {
     background-color: #e74246;
@@ -93,7 +216,16 @@ a {
 .benefits {
     color: #000000;
     background-color: #ffffff;
+    padding-bottom: 18px;
 }
+
+/*.benefits-design {
+    background-image: url("img/design/illustration-1.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+*/
+
 .benefits-list {
     list-style: none;
 }
@@ -372,8 +504,12 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+.header-container {
+    display: flex;
+    justify-content: space-between
+}
 .main-header {
-    margin-bottom: 18;
+    margin-bottom: 18px;
     background-color: #eeeeee;
     
 }
@@ -393,7 +529,7 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-left: 200px;
+    margin-left: 120px;
 }
 
 .user-navigation {
@@ -403,6 +539,7 @@ body {
     list-style: none;
     margin-left: auto;
 }
+
 .benefits-list {
     display: flex;
     justify-content: space-between;
@@ -437,24 +574,22 @@ body {
 }
 
 .picture-list1 {
-    width: 260px;
+    width: 25%;
 }
 .picture-list2 {
-    width: 260px;
+    width: 25%;
 }
 .picture-list3 {
-    width: 260px;
+    width: 25%;
 }
 .picture-list4 {
-    width: 260px;
+    width: 25%;
 }
 /* пошел подвал*/
 .main-footer .container {
     display: flex;
 }
-.map .map-img {
-    max-width: 100%
-}
+
 .footer-social {
     margin: 0;
     width: 260px;
@@ -504,7 +639,7 @@ body {
 }
 .pagination-list {
     display: flex;
-    margin-left: 10;
+    margin-left: 10px;
     padding-right: 0;
     
     list-style: none;
