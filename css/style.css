@@ -29,6 +29,9 @@ img {
     color: #ffffff;
     text-align: center;
 }
+.filter-button {
+    border: 0;
+}
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -637,14 +640,25 @@ body {
     margin: 0;
 }
 .modal {
-    background-color: #ffffff;
-    background-image: url("../img/design/close-cross.svg");
-    background-position: 0 0;
-    background-repeat: repeat;
-}
-.modal-write {
+    /*position: fixed;*/
+    background-color: #eeeeee; /*временно*/
+    opacity: 0.5; /*временно*/
     width: 765px;
+    box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.7);
     padding: 80px 100px;
+    margin-left: 150px;
+}
+.modal-close {
+    background-image: url("../img/design/close-cross.svg");
+    position: relative;
+    width: 21px;
+    height: 21px;
+    left: 700px;
+    background-repeat: no-repeat;
+    font-size: 0;
+    background-color: #ffffff;
+    border: 0;
+    cursor: pointer;
 }
 
 /* пошел catalog*/
