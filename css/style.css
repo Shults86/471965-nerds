@@ -35,14 +35,15 @@ img {
 }
 .filter-button {
     border: 0;
-    margin: 42px 0 0 83px;
+    margin: 26px 0 0 -6px;
     text-transform: uppercase;
     color: black;
-    padding: 0 0 0 0px;
+    padding: 15px 88px 15px 88px;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: bold;
     text-align: center;
+    cursor: pointer;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -711,6 +712,11 @@ background-image: url(../img/design/checkbox-on.svg);
 }
 .catalog-sorting {
     list-style: none;
+    margin: 5px 0px 0 29px;
+    text-transform: uppercase;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
 }
 .sorting {
     font-size: 18px;
@@ -774,7 +780,9 @@ background-image: url(../img/design/checkbox-on.svg);
     margin: 0px 31px 0 -3px;
     text-transform: uppercase;
     background-color: #eeeeee;
+    border: 2px solid #eeeeee;
 }
+
 .pagination-item a:hover {
     background-color: #dfdfdf;
 }
@@ -931,19 +939,18 @@ body {
     width: 620px;
     padding: 75px 0px 0 120px;
 }
-/*.modal {
+.modal {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     margin: auto;
-    background-color: #eeeeee; /*временно*/
-    /*opacity: 0.5; /*временно
-    width: 765px;
-    height: 200px;
+    background-color: #eeeeee; 
+    width: 960px;
+    height: 590px;
     box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.7);
-    padding: 80px 100px;
+    padding: 0;
 }
 .modal-close {
     background-image: url("../img/design/close-cross.svg");
@@ -956,7 +963,7 @@ body {
     background-color: #ffffff;
     border: 0;
     cursor: pointer;
-}*/
+}
 
 /* пошел catalog*/
 .inner-page-container {
@@ -1092,8 +1099,16 @@ body {
     display: none;
     
 }
-.catalog-item:hover .item-description {
+.item-decoration {
     background-image: url("../img/design/browser.svg");
+    opacity: 0.3;
+    height: 40px;
+    widows: 100%;
+}
+.catalog-item:hover .item-decoration {
+    opacity: 1;
+}
+.catalog-item:hover .item-description {
     display: block;
     position: absolute;
     width: 100%;
@@ -1119,23 +1134,14 @@ body {
     
     list-style: none;
 }
-.item-description {
-    margin: 0;
-    padding: 0;
-    height: 230px;
-}
+
 .item-description {
     content: '';
     width: 360px;
-    height: 40px;
     position: absolute;
-    background-image: url(../img/design/browser.svg);
-    top: 48px;
-    left: 40px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 100%;
-    opacity: 0.3; 
+    background-color: #eeeeee;
+    bottom: 0;
+
 }
 .percent {
     position: relative;
