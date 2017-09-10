@@ -35,6 +35,14 @@ img {
 }
 .filter-button {
     border: 0;
+    margin: 42px 0 0 83px;
+    text-transform: uppercase;
+    color: black;
+    padding: 0 0 0 0px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -179,14 +187,15 @@ div .active:before {
     box-sizing: border-box;
     border: 2px solid #c2c2c2;
     position: absolute;
-    top: 7px;
+    top: 0;
     right: 0;
     bottom: 0;
-    left: -65px;
+    left: 0px;
     margin: auto;
     border-radius: 50%;
 }
 .slider-controls i {
+    position: relative;
     display:inline-block;
     width: 12px;
     height: 12px;
@@ -424,6 +433,22 @@ div .active:before {
     padding: 0px 0px 0px 36px;
     margin: -3px 0 0 0;
 }
+.benefits-scroll li {
+    position: relative;
+    padding-left: 30px;
+}
+.benefits-scroll li::before {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: #ff0000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 0 8px 0 0;
+}
 .design1 li::before {
     content: '';
     height: 2px;
@@ -546,8 +571,9 @@ div .active:before {
 }
 .main-footer {
     background-color: #ffffff;
-    height: 632px
+    height: 632px;
     width: 100%;
+    padding: 0px 0 0px 0;
 }
 .social-button {
     display: flex;
@@ -595,15 +621,67 @@ div .active:before {
     padding: 56px 0 0 0;
 }
 .fieldset-list {
-    
+    margin: 0;
+    padding: 0;
+}
+.fieldset-list .filter-option {
+    margin: 0;
+    padding: 0;
+}
+.fieldset-filter-features {
+    padding: 0;
+}
+.filter-benefit {
+    position: relative;
+    padding: 3px 0 3px 40px;
+    position: relative;
+    padding: 0;
+    margin: 18px 0px 19px 110px;
+    bottom: 3px;
+    right: 76px;
+    display: block;
+}
+.filter-benefit:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0px;
+    right: 165px;
+    background: url(../img/design/checkbox-off.svg) no-repeat;
+}
+.filter-input:checked + .filter-benefit:before {
+background-image: url(../img/design/checkbox-on.svg);
 }
 .filter fieldset {
     border: none;
 }
 .legend-features {
-    padding: 33px 0 0px 0;
+    padding: 21px 0 0 0;
 }
-
+.filter-label {
+    position: relative;
+    padding: 0;
+    margin: 19px 0px 2px 76px;
+    display: block;
+    bottom: 12px;
+    right: 53px;
+    display: block;
+}
+.filter-label:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/design/radio-off.svg) no-repeat;
+    margin: 0px 1px 5px -36px;
+    padding: 0;
+}
+.filter-input:checked + .filter-label:before {
+    background-image: url(../img/design/radio-on.svg);
+}
 /*отсюда дублируем*/
 .filter legend {
     font-size: 18px;
@@ -613,7 +691,7 @@ div .active:before {
 }
 .filter ul {
     list-style: none;
-    line-height: 26px;
+    line-height: 21px;
 }
 .filter-input:hover + label,
 .filter-input:focus + label {
@@ -691,7 +769,10 @@ div .active:before {
 }
 .pagination-item a {
     color: #000000;
-
+    background-color: #eeeeee;
+    padding: 15px 9px;
+    margin: 0px 31px 0 -3px;
+    text-transform: uppercase;
     background-color: #eeeeee;
 }
 .pagination-item a:hover {
@@ -1001,14 +1082,35 @@ body {
     margin: 0;
     padding: 0px 0 0 90px;
 }
+
 .catalog-item {
-    width: 360px;
-    margin: 0;
-    padding: 48px 0px 0 40px;
+    position:relative;
+    margin: 48px 0px 0 40px;
+    padding: 0;
 }
+.item-description {
+    display: none;
+    
+}
+.catalog-item:hover .item-description {
+    background-image: url("../img/design/browser.svg");
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    text-align: center;
+    opacity: 1;
+}
+
 .catalog-sorting-ul {
     display: flex;
     margin: 0;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 }
 .pagination-list {
     display: flex;
@@ -1021,6 +1123,24 @@ body {
     margin: 0;
     padding: 0;
     height: 230px;
+}
+.item-description {
+    content: '';
+    width: 360px;
+    height: 40px;
+    position: absolute;
+    background-image: url(../img/design/browser.svg);
+    top: 48px;
+    left: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+    opacity: 0.3; 
+}
+.percent {
+    position: relative;
+    top: -12px;
+    margin: 0px 0px 0px -3px;
 }
 
 
