@@ -12,7 +12,7 @@
             <div class="container header-container">
                 <nav class="main-navigation">
                     <a href="index.html" class="main-header-logo">
-                            <img src="img\design\nerds-logo.svg" width="160" height="65" alt="логотип проект нердс">
+                            <img src="img/design/nerds-logo.svg" width="160" height="65" alt="логотип проект нердс">
                     </a>
                     <ul class="site-navigation">
                         <li><a href="#">Студия</a></li>
@@ -34,7 +34,9 @@
             <div class="catalog-columns">
                 <section class="filters">
                     <h2 class="visually-hidden">Фильтр товаров</h2>
-                    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <form class="filter" method="get"
+                          action="https://echo.htmlacademy.ru">
+                        <fieldset>
                         <legend>Стоимость</legend>
                         <div class="range-filter">
                             <div class="range-controls">
@@ -50,9 +52,12 @@
                             </div>
                         
                         </div>
+                            </fieldset>
                         <div class="fieldset">
-                        <legend>Сетка</legend>
+                            
+                        
                         <fieldset class="fieldset-filter-grid">
+                            <legend>Сетка</legend>
                             <ul class="fieldset-list">
                                 <li class="filter-option">
                                     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-Adaptive" checked>
@@ -63,13 +68,14 @@
                                     <label class="filter-label" for="filter-Fixed">Фиксированная</label>
                                 </li>
                                 <li class="filter-option">      
-                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="Rubber"id="filter-Rubber">
+                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="Rubber" id="filter-Rubber">
                                     <label class="filter-label" for="filter-Rubber">Резиновая</label>
                                 </li>
                             </ul>
                         </fieldset>
-                        <legend class="legend-features">Особенности</legend>
+                        
                         <fieldset class="fieldset-filter-features">
+                            <legend class="legend-features">Особенности</legend>
                                 <ul class="fieldset-list">
                                     <li class="filter-option">
                                         <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-Slider" checked>
@@ -113,7 +119,7 @@
                         <ul class="catalog-list">
                             <li class="catalog-item">
                                 <div class="item-decoration"></div>
-                                <img src="img\content\img-sedona.jpg" width="360" height="576" alt="шаблон седона" class="item-image">
+                                <img src="img/content/img-sedona.jpg" width="360" height="576" alt="шаблон седона" class="item-image">
                                 <div class="item-description">
                                     <a href="#"><h3>sedona</h3></a>
                                     <p class="template-description">Информационный сайт<br> для туристов</p> 
@@ -122,7 +128,7 @@
                             </li>
                             <li class="catalog-item">
                                 <div class="item-decoration"></div>
-                                <img src="img\content\img-pink.jpg" width="360" height="576" alt="шаблон Пинк">
+                                <img src="img/content/img-pink.jpg" width="360" height="576" alt="шаблон Пинк">
                                 <div class="item-description">
                                     <a href="#"><h3>Pink App</h3></a>
                                     <p class="template-description">Продуктовый лендинг приложения для IOS и Android</p>    
@@ -131,7 +137,7 @@
                             </li>
                             <li class="catalog-item">
                                 <div class="item-decoration"></div>
-                                <img src="img\content\img-barbershop.jpg" width="360" height="576" alt="шаблон бородинский">
+                                <img src="img/content/img-barbershop.jpg" width="360" height="576" alt="шаблон бородинский">
                                 <div class="item-description">
                                     <a href="#"><h3>Barbershop</h3></a>
                                     <p class="template-description">Сайт салоны красоты. Для мужчин, да</p>   
@@ -140,7 +146,7 @@
                             </li>
                             <li class="catalog-item">
                                 <div class="item-decoration"></div>
-                                <img src="img\content\img-mishka.jpg" width="360" height="576" alt="шаблон Мишка">
+                                <img src="img/content/img-mishka.jpg" width="360" height="576" alt="шаблон Мишка">
                                 <div class="item-description">
                                     <a href="#"><h3>Mishka</h3></a>
                                     <p class="template-description">Интернет-магазин вязаных игрушек</p>   
@@ -153,7 +159,7 @@
                                     <span></span>
                                     <span></span>
                                 </div>
-                                <img src="img\content\img-aplus.jpg" width="360" height="576" alt="шаблон А+">
+                                <img src="img/content/img-aplus.jpg" width="360" height="576" alt="шаблон А+">
                                 <div class="item-description">
                                     <a href="#"><h3>A Plus</h3></a>
                                     <p class="template-description">Лендинг курсов повышения квалификации</p>   
@@ -166,7 +172,7 @@
                                     <span></span>
                                     <span></span>
                                 </div>
-                                <img src="img\content\img-kvast.jpg" width="360" height="576" alt="шаблон Кваст">
+                                <img src="img/content/img-kvast.jpg" width="360" height="576" alt="шаблон Кваст">
                                 <div class="item-description">
                                     <a href="#"><h3>Кваст</h3></a>
                                     <p class="template-description">Промо-сайт производителя крафтового кваса</p>   
@@ -213,11 +219,11 @@
                 <h2>Напишите нам</h2>
                 <form action="#" method="post">
                     <label>
-                        <p>Ваше имя</p>
+                        <span>Ваше имя</span>
                         <input type="text" name="name" id="name-field" value="где этот текст">
                     </label>
                     <label>
-                        <p> Ваш e-mail:</p>
+                        <span> Ваш e-mail:</span>
                         <input type="text" name="email" id="email-field" value="почта">
                         </label>
                     <button class="modal-close" type="button">Закрыть</button>

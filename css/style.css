@@ -703,7 +703,7 @@ background-image: url(../img/design/checkbox-on.svg);
 }
 .filter-input:active + label {
     color: #000000;
-    opacity: 0.;   
+    opacity: 0.3;   
 }
 .filter-input:disabled + label {
     color: #000000;
