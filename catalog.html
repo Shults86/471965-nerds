@@ -26,15 +26,16 @@
                 </nav>
             </div>
         </header>
-        <div class="inner-page-container">
+        <div class="container inner-page-container">
                 <h1 class="page-title container">Магазин готовых шаблонов</h1>
         </div>
         <main class="container">
-            
+        
             <div class="catalog-columns">
                 <section class="filters">
                     <h2 class="visually-hidden">Фильтр товаров</h2>
                     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                        <legend>Стоимость</legend>
                         <div class="range-filter">
                             <div class="range-controls">
                                 <div class="scale">
@@ -44,14 +45,15 @@
                                 <div class="toggle toggle-max"></div>
                             </div>
                             <div class="price-controls">
-                                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                                <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                                <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
                             </div>
                         
                         </div>
-                        <fieldset>
-                            <legend>Сетка</legend>
-                            <ul>
+                        <div class="fieldset">
+                        <legend>Сетка</legend>
+                        <fieldset class="fieldset-filter-grid">
+                            <ul class="fieldset-list">
                                 <li class="filter-option">
                                     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-Adaptive" checked>
                                     <label for="filter-Adaptive">Адаптивная</label>
@@ -66,9 +68,9 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset>
-                            <legend>Особенности</legend>
-                                <ul>
+                        <legend class="legend-features">Особенности</legend>
+                        <fieldset class="fieldset-filter-features">
+                                <ul class="fieldset-list">
                                     <li class="filter-option">
                                         <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-Slider" checked>
                                         <label for="filter-Slider">Слайдер</label>
@@ -92,6 +94,7 @@
                                 </ul>
                         </fieldset>
                         <button type="submit" class="filter-button">Показать</button>
+                        </div>
                     </form>
                 </section>
                 <div>
@@ -117,7 +120,7 @@
                                 <img src="img\content\img-sedona.jpg" width="360" height="576" alt="шаблон седона" class="item-image">
                                 <div class="item-description">
                                     <a href="#"><h3>sedona</h3></a>
-                                    <p class="template-description">Информационный сайт для туристов</p> 
+                                    <p class="template-description">Информационный сайт<br> для туристов</p> 
                                     <input type="button" class="button-order" value="9 900 руб.">
                                 </div>
                             </li>
